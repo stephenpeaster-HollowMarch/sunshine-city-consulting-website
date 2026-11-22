@@ -47,15 +47,18 @@ e.g. `python3 -m http.server` from this directory.
 ## Guardrails (binding — see the site map for the full list)
 
 - No prices anywhere. The $200/hr network rate never appears.
-- No testimonials, client quotes, client names, or case results. The client
-  feedback section is omitted entirely until real LinkedIn recommendations
-  are pulled and adapted.
+- Client feedback: the "Recommendations for Stephen" section on Meet the Firm
+  carries the two verified LinkedIn recommendations (Ruth Faust, Sep 12, 2022;
+  Paul Schechter, Jul 8, 2022 — both CFGI), quoted verbatim with
+  role/employer/date labels. No other testimonials, client quotes, client
+  names, or case results.
 - Never name Forvis Mazars or any expert network, and never say Stephen is
   available for expert-network consultations.
 - No wholesale resale, no paid newsletter/course/templates, no seventh
   service page (indirect tax due diligence is an open question).
 - No invented services, team members, or claims beyond the record.
 - Contact is by email link only — no phone number, no contact form.
-- Proposed wording is marked `<!-- PROPOSED: ... -->` in the HTML for
-  Stephen to confirm (hero headline and supporting line, the three
-  "how to engage" steps, the SALTy Snacks link, and the legal-page drafts).
+- Copy was reviewed by Hermes (Dot) and verified by Metatron on Nov 22, 2026;
+  no `<!-- PROPOSED -->` markers remain. The Privacy Policy and Terms of Use
+  still carry private-preview markers ([Confirm...], [Effective date]) that
+  must be resolved before any public version.

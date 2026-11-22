@@ -233,30 +233,6 @@ section + section { border-top: 1px solid var(--line); }
 }
 .credibility li:last-child { border-bottom: none; }
 
-.steps { counter-reset: step; list-style: none; padding: 0; margin: 1.5rem 0 0; }
-.steps li {
-  counter-increment: step;
-  padding: 0.9rem 0 0.9rem 3rem;
-  position: relative;
-  border-bottom: 1px solid var(--line);
-}
-.steps li:last-child { border-bottom: none; }
-.steps li::before {
-  content: counter(step);
-  position: absolute;
-  left: 0;
-  top: 0.85rem;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background: var(--navy);
-  color: var(--white);
-  font-weight: 700;
-  text-align: center;
-  line-height: 2rem;
-}
-.soft { color: var(--muted); }
-
 .snacks { background: var(--bg-soft); }
 .snacks .wrap { max-width: 720px; }
 
@@ -289,6 +265,16 @@ section + section { border-top: 1px solid var(--line); }
 .legal h2 { margin-top: 2rem; }
 .legal p { margin: 0.5rem 0; }
 .legal .updated { color: var(--muted); font-size: 0.9rem; }
+
+/* ---------- Recommendations ---------- */
+
+blockquote {
+  margin: 1.5rem 0;
+  padding: 0.25rem 0 0.25rem 1rem;
+  border-left: 4px solid var(--gold);
+}
+blockquote p { margin: 0.5rem 0; }
+.attribution { color: var(--muted); font-size: 0.95rem; }
 
 /* ---------- Footer ---------- */
 
