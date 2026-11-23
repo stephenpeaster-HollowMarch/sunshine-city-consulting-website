@@ -2,6 +2,7 @@
    Palette: deep navy + gold + white. Clean, credible, warm. */
 
 :root {
+  color-scheme: light;
   --navy: #0a1f44;
   --navy-soft: #16294f;
   --gold: #c9a227;
@@ -42,7 +43,9 @@ section + section { border-top: 1px solid var(--line); }
 /* ---------- Header ---------- */
 
 .site-header {
-  background: var(--white);
+  background-color: #ffffff;
+  color-scheme: light;
+  forced-color-adjust: none;
   border-bottom: 3px solid var(--gold);
   position: sticky;
   top: 0;
@@ -62,6 +65,7 @@ section + section { border-top: 1px solid var(--line); }
   align-items: center;
   gap: 0.75rem;
   text-decoration: none;
+  background-color: #ffffff;
   color: var(--navy);
   font-weight: 700;
   font-size: 1.05rem;
