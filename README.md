@@ -12,7 +12,9 @@ Clean URLs — one `index.html` per folder. All pages share `styles.css`.
 index.html                          Home
 services/index.html                 Services hub
 services/nexus-analysis/            Nexus analysis
+services/multi-state-taxability-analysis/   Multi-state taxability analysis
 services/exposure-assessments/      Exposure assessments
+services/notice-resolution/           Notice resolution
 services/audit-defense/             Audit defense
 services/voluntary-disclosure/      Voluntary disclosure
 services/reverse-audits/            Reverse audits
@@ -54,8 +56,9 @@ e.g. `python3 -m http.server` from this directory.
   names, or case results.
 - Never name Forvis Mazars or any expert network, and never say Stephen is
   available for expert-network consultations.
-- No wholesale resale, no paid newsletter/course/templates, no seventh
-  service page (indirect tax due diligence is an open question).
+- No wholesale resale, no paid newsletter/course/templates, no additional
+  service pages beyond the eight approved ones (indirect tax due diligence
+  is an open question).
 - No invented services, team members, or claims beyond the record.
 - Contact is by email link only — no phone number, no contact form.
 - Copy was reviewed by Hermes (Dot) and verified by Metatron on Nov 22, 2026;
