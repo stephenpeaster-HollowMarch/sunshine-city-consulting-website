@@ -49,13 +49,71 @@
 
   <section>
     <div class="wrap narrow">
-      <p>The list below gathers the 14 posts published so far — October 1 to November 20, 2026, newest first — with a short summary of each and a link to the full post on LinkedIn. New posts will be added here as they publish. Each post is tagged by state, industry, and topic; filters are coming.</p>
+      <p>The list below gathers the 14 posts published so far — October 1 to November 20, 2026, newest first — with a short summary of each and a link to the full post on LinkedIn. New posts will be added here as they publish. Each post is tagged by state, industry, and topic; use the filters below to narrow the list, or click any tag to filter by it.</p>
+
+      <div class="snack-filters" id="snack-filters" aria-label="Filter SALTy Snacks posts">
+        <div class="filter-row">
+          <label>State
+            <select id="filter-state">
+              <option value="">All states</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="DC">District of Columbia</option>
+              <option value="IL">Illinois</option>
+              <option value="MD">Maryland</option>
+              <option value="MO">Missouri</option>
+              <option value="NJ">New Jersey</option>
+              <option value="OK">Oklahoma</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="WA">Washington</option>
+            </select>
+          </label>
+          <label>Industry
+            <select id="filter-industry">
+              <option value="">All industries</option>
+              <option value="data-centers">Data centers</option>
+              <option value="digital-advertising">Digital advertising</option>
+              <option value="ecommerce-marketplaces">E-commerce &amp; marketplaces</option>
+              <option value="energy">Energy</option>
+              <option value="software-saas">Software &amp; SaaS</option>
+              <option value="streaming-entertainment">Streaming &amp; entertainment</option>
+              <option value="video-games">Video games</option>
+            </select>
+          </label>
+          <label>Topic
+            <select id="filter-topic">
+              <option value="">All topics</option>
+              <option value="digital-advertising-tax">Digital advertising tax</option>
+              <option value="digital-services-saas">Digital services &amp; SaaS</option>
+              <option value="exemptions">Exemptions</option>
+              <option value="gross-receipts-tax">Gross receipts tax</option>
+              <option value="marketplace-facilitator">Marketplace facilitator</option>
+              <option value="rate-changes">Rate changes</option>
+              <option value="rulings-guidance">Rulings &amp; guidance</option>
+              <option value="sourcing">Sourcing</option>
+              <option value="taxability">Taxability</option>
+            </select>
+          </label>
+          <label>From
+            <input type="date" id="filter-from" min="2026-10-01" max="2026-11-20">
+          </label>
+          <label>To
+            <input type="date" id="filter-to" min="2026-10-01" max="2026-11-20">
+          </label>
+        </div>
+        <div class="filter-row filter-meta">
+          <p class="filter-count" id="filter-count" aria-live="polite">Showing 14 of 14</p>
+          <button type="button" class="filter-clear" id="filter-clear">Clear filters</button>
+        </div>
+      </div>
+      <p class="filter-empty" id="filter-empty" hidden>No posts match these filters. <button type="button" id="filter-empty-clear">Clear filters</button></p>
 
       <article class="snack-entry" data-state="TX" data-industry="software-saas,streaming-entertainment" data-topic="digital-services-saas">
         <p class="snack-date"><time datetime="2026-11-20">November 20, 2026</time></p>
         <h2>Texas proposes to end sales tax on streaming and data processing services to include SaaS</h2>
         <p>On back-to-back days, outgoing Texas Comptroller Don Huffines proposed narrowing the sales-tax base: Rule 3.313 would end the tax on streaming, and Rule 3.308 would take hosted technology services and SaaS out of taxable data processing, unless the offering includes taxable data processing, such as processing a customer’s own data in Texas. The chief revenue estimator projects about $290 million in lost state general revenue in fiscal 2027.</p>
-        <p class="tags"><span class="tag tag-state">Texas</span> <span class="tag tag-industry">Software &amp; SaaS</span> <span class="tag tag-industry">Streaming &amp; entertainment</span> <span class="tag tag-topic">Digital services &amp; SaaS</span></p>
+        <p class="tags"><span class="tag tag-state" data-value="TX">Texas</span> <span class="tag tag-industry" data-value="software-saas">Software &amp; SaaS</span> <span class="tag tag-industry" data-value="streaming-entertainment">Streaming &amp; entertainment</span> <span class="tag tag-topic" data-value="digital-services-saas">Digital services &amp; SaaS</span></p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7529656273651400704">Read the full post on LinkedIn</a></p>
       </article>
 
@@ -63,7 +121,7 @@
         <p class="snack-date"><time datetime="2026-11-17">November 17, 2026</time></p>
         <h2>Illinois and Utah's targeted advertising (i.e., digital ads) tax effective January 1, 2027. Litigation continues across the states.</h2>
         <p>Illinois's 10% targeted advertising tax and Utah's 4.7% tax both take effect January 1, 2027. Litigation continues: Maryland's digital advertising tax was struck down in August, Illinois is already in court, and Utah faces a constitutional challenge.</p>
-        <p class="tags"><span class="tag tag-state">Illinois</span> <span class="tag tag-state">Utah</span> <span class="tag tag-state">Maryland</span> <span class="tag tag-industry">Digital advertising</span> <span class="tag tag-topic">Digital advertising tax</span></p>
+        <p class="tags"><span class="tag tag-state" data-value="IL">Illinois</span> <span class="tag tag-state" data-value="UT">Utah</span> <span class="tag tag-state" data-value="MD">Maryland</span> <span class="tag tag-industry" data-value="digital-advertising">Digital advertising</span> <span class="tag tag-topic" data-value="digital-advertising-tax">Digital advertising tax</span></p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7528466159306801153">Read the full post on LinkedIn</a></p>
       </article>
 
@@ -71,7 +129,7 @@
         <p class="snack-date"><time datetime="2026-11-12">November 12, 2026</time></p>
         <h2>Texas draws the line on data-center power. A power plant is not exempt data center equipment just because it is adjacent to and primarily supporting a data center.</h2>
         <p>The Texas Comptroller concluded power-generation assets serving a qualifying data center do not qualify for the project exemption just because they sit alongside it — though the same equipment may qualify for the manufacturing exemption when used to manufacture electricity for sale.</p>
-        <p class="tags"><span class="tag tag-state">Texas</span> <span class="tag tag-industry">Data centers</span> <span class="tag tag-topic">Exemptions</span></p>
+        <p class="tags"><span class="tag tag-state" data-value="TX">Texas</span> <span class="tag tag-industry" data-value="data-centers">Data centers</span> <span class="tag tag-topic" data-value="exemptions">Exemptions</span></p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7526660285588213761">Read the full post on LinkedIn</a></p>
       </article>
 
@@ -79,7 +137,7 @@
         <p class="snack-date"><time datetime="2026-11-10">November 10, 2026</time></p>
         <h2>Maryland's multiple points of use exemptions can be used on a blanket basis beginning January 1, 2027.</h2>
         <p>Beginning January 1, 2027, an authorized buyer issues one vendor-level multiple points of use certificate to each vendor, replacing the transaction-by-transaction approach in effect since July 1, 2025.</p>
-        <p class="tags"><span class="tag tag-state">Maryland</span> <span class="tag tag-industry">Software &amp; SaaS</span> <span class="tag tag-topic">Exemptions</span></p>
+        <p class="tags"><span class="tag tag-state" data-value="MD">Maryland</span> <span class="tag tag-industry" data-value="software-saas">Software &amp; SaaS</span> <span class="tag tag-topic" data-value="exemptions">Exemptions</span></p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7525952601083998209">Read the full post on LinkedIn</a></p>
       </article>
 
@@ -87,7 +145,7 @@
         <p class="snack-date"><time datetime="2026-11-09">November 9, 2026</time></p>
         <h2>Oklahoma extends exempt-entity sales tax treatment to contractors' qualified purchases.</h2>
         <p>Effective November 1, 2026, SB 44 extends an exempt entity's sales-tax treatment to contractors and subcontractors buying tangible personal property or services to perform a contract with that entity.</p>
-        <p class="tags"><span class="tag tag-state">Oklahoma</span> <span class="tag tag-topic">Exemptions</span></p>
+        <p class="tags"><span class="tag tag-state" data-value="OK">Oklahoma</span> <span class="tag tag-topic" data-value="exemptions">Exemptions</span></p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7525701127636434945">Read the full post on LinkedIn</a></p>
       </article>
 
@@ -95,7 +153,7 @@
         <p class="snack-date"><time datetime="2026-11-06">November 6, 2026</time></p>
         <h2>Texas: Marketplace fees are one step from nontaxable</h2>
         <p>The Comptroller formally proposed removing the provision that taxes marketplace fees as data processing. The current rule stays in effect until the change is final, so sellers should keep remitting for now.</p>
-        <p class="tags"><span class="tag tag-state">Texas</span> <span class="tag tag-industry">E-commerce &amp; marketplaces</span> <span class="tag tag-topic">Taxability</span></p>
+        <p class="tags"><span class="tag tag-state" data-value="TX">Texas</span> <span class="tag tag-industry" data-value="ecommerce-marketplaces">E-commerce &amp; marketplaces</span> <span class="tag tag-topic" data-value="taxability">Taxability</span></p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7524494548325036032">Read the full post on LinkedIn</a></p>
       </article>
 
@@ -103,7 +161,7 @@
         <p class="snack-date"><time datetime="2026-10-23">October 23, 2026</time></p>
         <h2>Missouri says video-game skins aren't taxable — and the marketplace isn't a facilitator</h2>
         <p>Missouri DOR's Letter Ruling LR 8408 held that transfers of Counter-Strike digital cosmetic items on a peer-to-peer marketplace aren't taxable sales, so the platform has no marketplace-facilitator duties.</p>
-        <p class="tags"><span class="tag tag-state">Missouri</span> <span class="tag tag-industry">Video games</span> <span class="tag tag-topic">Digital services &amp; SaaS</span> <span class="tag tag-topic">Marketplace facilitator</span> <span class="tag tag-topic">Rulings &amp; guidance</span></p>
+        <p class="tags"><span class="tag tag-state" data-value="MO">Missouri</span> <span class="tag tag-industry" data-value="video-games">Video games</span> <span class="tag tag-topic" data-value="digital-services-saas">Digital services &amp; SaaS</span> <span class="tag tag-topic" data-value="marketplace-facilitator">Marketplace facilitator</span> <span class="tag tag-topic" data-value="rulings-guidance">Rulings &amp; guidance</span></p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7519398812172517376">Read the full post on LinkedIn</a></p>
       </article>
 
@@ -111,7 +169,7 @@
         <p class="snack-date"><time datetime="2026-10-15">October 15, 2026</time></p>
         <h2>D.C. delays its sales tax hike — but rental cars and occupancy get higher rates.</h2>
         <p>D.C.'s FY2027 Budget Support Act holds the general rate at 6% for FY2027 instead of moving to 7%, while the rental car tax rises to 11% and an additional 1% lodging tax becomes permanent.</p>
-        <p class="tags"><span class="tag tag-state">District of Columbia (DC)</span> <span class="tag tag-topic">Rate changes</span></p>
+        <p class="tags"><span class="tag tag-state" data-value="DC">District of Columbia (DC)</span> <span class="tag tag-topic" data-value="rate-changes">Rate changes</span></p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7516449413544783872">Read the full post on LinkedIn</a></p>
       </article>
 
@@ -119,7 +177,7 @@
         <p class="snack-date"><time datetime="2026-10-09">October 9, 2026</time></p>
         <h2>Texas Supreme Court: franchise tax is sourced to where title transfers.</h2>
         <p>In NuStar Energy v. Hancock, the court held franchise-tax receipts from tangible personal property are sourced where the buyer takes possession and control in Texas — "what matters is the customer's location when the seller surrenders the goods."</p>
-        <p class="tags"><span class="tag tag-state">Texas</span> <span class="tag tag-industry">Energy</span> <span class="tag tag-topic">Sourcing</span></p>
+        <p class="tags"><span class="tag tag-state" data-value="TX">Texas</span> <span class="tag tag-industry" data-value="energy">Energy</span> <span class="tag tag-topic" data-value="sourcing">Sourcing</span></p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7514298363425574912">Read the full post on LinkedIn</a></p>
       </article>
 
@@ -127,7 +185,7 @@
         <p class="snack-date"><time datetime="2026-10-08">October 8, 2026</time></p>
         <h2>Netflix's Colorado sales tax refund argument dismissed by CO Supreme Court.</h2>
         <p>Netflix and the Colorado DOR settled, and on July 22 the Colorado Supreme Court dismissed the case with prejudice — so the 2025 Court of Appeals decision stands: streaming subscriptions are "corporeal" tangible personal property under Colorado's 1935 statute.</p>
-        <p class="tags"><span class="tag tag-state">Colorado</span> <span class="tag tag-industry">Streaming &amp; entertainment</span> <span class="tag tag-topic">Digital services &amp; SaaS</span></p>
+        <p class="tags"><span class="tag tag-state" data-value="CO">Colorado</span> <span class="tag tag-industry" data-value="streaming-entertainment">Streaming &amp; entertainment</span> <span class="tag tag-topic" data-value="digital-services-saas">Digital services &amp; SaaS</span></p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7513896620607070210">Read the full post on LinkedIn</a></p>
       </article>
 
@@ -135,7 +193,7 @@
         <p class="snack-date"><time datetime="2026-10-07">October 7, 2026</time></p>
         <h2>Washington tiers its B&O tax for service businesses.</h2>
         <p>As of October 1, 2025, Washington applies a three-tier service B&amp;O structure: 1.5% under $1 million, 1.75% from $1 million to $4.999 million, and 2.1% at $5 million or more of Washington-sourced services revenue, measured in the prior year.</p>
-        <p class="tags"><span class="tag tag-state">Washington</span> <span class="tag tag-topic">Gross receipts tax</span> <span class="tag tag-topic">Rate changes</span></p>
+        <p class="tags"><span class="tag tag-state" data-value="WA">Washington</span> <span class="tag tag-topic" data-value="gross-receipts-tax">Gross receipts tax</span> <span class="tag tag-topic" data-value="rate-changes">Rate changes</span></p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7513613887213260801">Read the full post on LinkedIn</a></p>
       </article>
 
@@ -143,7 +201,7 @@
         <p class="snack-date"><time datetime="2026-10-05">October 5, 2026</time></p>
         <h2>California's SaaS tax rules take shape</h2>
         <p>The CDTFA released its September 1 discussion paper with draft emergency regulations implementing SB 122, which will treat most prewritten software and SaaS as taxable tangible personal property starting January 1, 2027.</p>
-        <p class="tags"><span class="tag tag-state">California</span> <span class="tag tag-industry">Software &amp; SaaS</span> <span class="tag tag-topic">Digital services &amp; SaaS</span> <span class="tag tag-topic">Exemptions</span></p>
+        <p class="tags"><span class="tag tag-state" data-value="CA">California</span> <span class="tag tag-industry" data-value="software-saas">Software &amp; SaaS</span> <span class="tag tag-topic" data-value="digital-services-saas">Digital services &amp; SaaS</span> <span class="tag tag-topic" data-value="exemptions">Exemptions</span></p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7512845809055457282">Read the full post on LinkedIn</a></p>
       </article>
 
@@ -151,7 +209,7 @@
         <p class="snack-date"><time datetime="2026-10-02">October 2, 2026</time></p>
         <h2>New Jersey freezes new letter rulings for 60 days</h2>
         <p>New Jersey froze letter-ruling requests for 60 days effective October 1; written requests may still receive non-binding general guidance, which carries no ruling's protection in an audit.</p>
-        <p class="tags"><span class="tag tag-state">New Jersey</span> <span class="tag tag-topic">Rulings &amp; guidance</span></p>
+        <p class="tags"><span class="tag tag-state" data-value="NJ">New Jersey</span> <span class="tag tag-topic" data-value="rulings-guidance">Rulings &amp; guidance</span></p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7511725634746814464">Read the full post on LinkedIn</a></p>
       </article>
 
@@ -159,7 +217,7 @@
         <p class="snack-date"><time datetime="2026-10-01">October 1, 2026</time></p>
         <h2>Texas moves to end sales tax on marketplace fees.</h2>
         <p>Comptroller Huffines signed an executive order directing his agency to amend Rule 3.330 and remove marketplace and platform fees from taxable data processing services.</p>
-        <p class="tags"><span class="tag tag-state">Texas</span> <span class="tag tag-industry">E-commerce &amp; marketplaces</span> <span class="tag tag-topic">Taxability</span></p>
+        <p class="tags"><span class="tag tag-state" data-value="TX">Texas</span> <span class="tag tag-industry" data-value="ecommerce-marketplaces">E-commerce &amp; marketplaces</span> <span class="tag tag-topic" data-value="taxability">Taxability</span></p>
         <p><a href="https://www.linkedin.com/feed/update/urn:li:activity:7511381979381026818">Read the full post on LinkedIn</a></p>
       </article>
 
@@ -189,6 +247,75 @@
   </div>
   <p class="copyright">© 2026 Sunshine City Consulting, LLC. All rights reserved.</p>
 </footer>
+
+<script>
+(function () {
+  var entries = Array.prototype.slice.call(document.querySelectorAll('.snack-entry'));
+  var total = entries.length;
+  var stateSel = document.getElementById('filter-state');
+  var industrySel = document.getElementById('filter-industry');
+  var topicSel = document.getElementById('filter-topic');
+  var fromInput = document.getElementById('filter-from');
+  var toInput = document.getElementById('filter-to');
+  var countEl = document.getElementById('filter-count');
+  var emptyEl = document.getElementById('filter-empty');
+
+  function listOf(value) {
+    return value ? value.split(',').map(function (s) { return s.trim(); }).filter(Boolean) : [];
+  }
+
+  function applyFilters() {
+    var state = stateSel.value;
+    var industry = industrySel.value;
+    var topic = topicSel.value;
+    var from = fromInput.value;
+    var to = toInput.value;
+    var shown = 0;
+    entries.forEach(function (entry) {
+      var states = listOf(entry.getAttribute('data-state'));
+      var industries = listOf(entry.getAttribute('data-industry'));
+      var topics = listOf(entry.getAttribute('data-topic'));
+      var timeEl = entry.querySelector('time');
+      var date = timeEl ? timeEl.getAttribute('datetime') : '';
+      var ok = true;
+      if (state && states.indexOf(state) === -1) ok = false;
+      if (industry && industries.indexOf(industry) === -1) ok = false;
+      if (topic && topics.indexOf(topic) === -1) ok = false;
+      if (from && date < from) ok = false;
+      if (to && date > to) ok = false;
+      entry.style.display = ok ? '' : 'none';
+      if (ok) shown += 1;
+    });
+    countEl.textContent = 'Showing ' + shown + ' of ' + total;
+    emptyEl.hidden = shown !== 0;
+  }
+
+  function clearFilters() {
+    stateSel.value = '';
+    industrySel.value = '';
+    topicSel.value = '';
+    fromInput.value = '';
+    toInput.value = '';
+    applyFilters();
+  }
+
+  [stateSel, industrySel, topicSel, fromInput, toInput].forEach(function (el) {
+    el.addEventListener('change', applyFilters);
+  });
+  document.getElementById('filter-clear').addEventListener('click', clearFilters);
+  document.getElementById('filter-empty-clear').addEventListener('click', clearFilters);
+
+  document.querySelectorAll('.snack-entry .tag').forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      var value = chip.getAttribute('data-value');
+      if (chip.classList.contains('tag-state')) stateSel.value = value;
+      if (chip.classList.contains('tag-industry')) industrySel.value = value;
+      if (chip.classList.contains('tag-topic')) topicSel.value = value;
+      applyFilters();
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
