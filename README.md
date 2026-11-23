@@ -21,7 +21,7 @@ services/reverse-audits/            Reverse audits
 services/penalty-abatement/         Penalty abatement
 meet-the-firm/index.html            Meet the Firm
 contact/index.html                  Contact (email link only)
-salty-snacks/index.html             SALTy Snacks resource page (14 LinkedIn posts, newest first)
+salty-snacks/index.html             SALTy Snacks resource page (14 LinkedIn posts, newest first; tagged by state, industry, and topic — filters coming)
 privacy-policy/index.html           Privacy Policy (short draft)
 terms-of-use/index.html             Terms of Use (short draft)
 assets/hero.webp                    Hero image — sunrise over the St. Petersburg

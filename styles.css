@@ -248,6 +248,11 @@ section + section { border-top: 1px solid var(--line); }
 .snack-entry { margin-bottom: 2.5rem; }
 .snack-entry h2 { margin-bottom: 0.35rem; }
 .snack-date { color: var(--muted); font-size: 0.95rem; font-weight: 700; margin: 0 0 0.25rem; }
+.tags { margin: 0.6rem 0 0.75rem; }
+.tag { display: inline-block; font-size: 0.8rem; font-weight: 600; color: var(--navy); background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 0.15rem 0.6rem; margin: 0 0.35rem 0.35rem 0; }
+.tag-state { border-color: var(--navy); }
+.tag-topic { border-color: var(--gold); }
+.tags-note { color: var(--muted); font-size: 0.9rem; }
 .service-entry h2 { margin-bottom: 0.35rem; }
 .service-entry h2 a { text-decoration: none; color: var(--navy); }
 .service-entry h2 a:hover { color: var(--gold-dark); }
