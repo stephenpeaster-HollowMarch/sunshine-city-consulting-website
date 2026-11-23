@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sunshinecityconsultingllc.com/sitemap.xml
