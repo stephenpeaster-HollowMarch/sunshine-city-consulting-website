@@ -242,6 +242,12 @@ section + section { border-top: 1px solid var(--line); }
 /* ---------- Service pages ---------- */
 
 .service-entry { margin-bottom: 2.5rem; }
+
+/* ---------- SALTy Snacks ---------- */
+
+.snack-entry { margin-bottom: 2.5rem; }
+.snack-entry h2 { margin-bottom: 0.35rem; }
+.snack-date { color: var(--muted); font-size: 0.95rem; font-weight: 700; margin: 0 0 0.25rem; }
 .service-entry h2 { margin-bottom: 0.35rem; }
 .service-entry h2 a { text-decoration: none; color: var(--navy); }
 .service-entry h2 a:hover { color: var(--gold-dark); }
