@@ -110,7 +110,7 @@ section + section { border-top: 1px solid var(--line); }
 .has-dropdown { position: relative; }
 .has-dropdown > a::after { content: " \25BE"; font-size: 0.8em; }
 
-.dropdown {
+.main-nav .dropdown {
   display: none;
   position: absolute;
   left: 0;
@@ -356,7 +356,7 @@ blockquote p { margin: 0.5rem 0; }
   }
   .nav-toggle:checked ~ .main-nav { display: block; }
   .main-nav ul { flex-direction: column; padding: 0.5rem 1rem 1rem; }
-  .dropdown {
+  .main-nav .dropdown {
     display: block;
     position: static;
     border: none;
