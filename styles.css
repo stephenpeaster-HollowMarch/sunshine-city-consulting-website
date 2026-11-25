@@ -266,6 +266,11 @@ section + section { border-top: 1px solid var(--line); }
 .filter-count { margin: 0; font-weight: 700; color: var(--navy); }
 .filter-clear, .filter-empty button { font: inherit; font-size: 0.9rem; font-weight: 700; color: var(--navy); background: var(--white); border: 2px solid var(--navy); border-radius: 4px; padding: 0.4rem 0.9rem; cursor: pointer; }
 .filter-clear:hover, .filter-empty button:hover { background: var(--navy); color: var(--white); }
+.snack-toggle { display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem; width: 100%; padding: 0; border: 0; background: none; font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.snack-toggle:hover .snack-headline, .snack-toggle:focus-visible .snack-headline { text-decoration: underline; }
+.snack-toggle-icon { flex: none; font-size: 1.25rem; font-weight: 700; color: var(--gold); }
+.snack-body[hidden] { display: none; }
+
 .filter-update { font: inherit; font-size: 0.9rem; font-weight: 700; color: var(--navy); background: var(--white); border: 2px solid var(--navy); border-radius: 4px; padding: 0.4rem 0.9rem; cursor: pointer; }
 .filter-update:hover { background: var(--navy); color: var(--white); }
 .filter-update.has-pending { background: var(--gold); border-color: var(--gold); }
